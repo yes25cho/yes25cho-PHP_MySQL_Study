@@ -1,0 +1,49 @@
+Microsoft Windows [Version 10.0.19044.1586]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\yscho>mysql -u root -p
+Enter password: *****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.26 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create Database opentutorials;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> Drop Database opentutorials;
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> create Database opentutorials;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show Databases;
++--------------------+
+| Database           |
++--------------------+
+| company1_schema    |
+| consumer           |
+| consumer_db        |
+| information_schema |
+| mysql              |
+| opentutorials      |
+| performance_schema |
+| sakila             |
+| school_db          |
+| student_db         |
+| sys                |
+| world              |
++--------------------+
+12 rows in set (0.02 sec)
+
+mysql> ues opentutorials;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ues opentutorials' at line 1
+mysql> use opentutorials;
+Database changed
